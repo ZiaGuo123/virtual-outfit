@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, "Noto Sans SC", system-ui, sans-serif;
+  color: #282824;
+  background: #f7f6f2;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #b9a57b;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #e9deca;
+}
+
+.garment {
+  transition: opacity 220ms ease, filter 220ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
